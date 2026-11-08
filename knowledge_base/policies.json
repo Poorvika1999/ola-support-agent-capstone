@@ -1,0 +1,74 @@
+[
+  {
+    "id": "KB01",
+    "topic": "ticket_priority_classification",
+    "title": "Ticket Priority Classification Rules",
+    "text": "Every incoming support ticket is classified into one of five categories: Billing, Technical Issue, Account Access, Product Defect, or General Inquiry. Priority is assigned at intake based on category and stated impact: Account Access and Billing issues that block a rider or driver from completing a trip are treated as high priority by default. General Inquiry tickets are treated as low priority unless the customer explicitly reports a safety concern, in which case the ticket is immediately reclassified as high priority regardless of category."
+  },
+  {
+    "id": "KB02",
+    "topic": "sla_by_severity",
+    "title": "SLA-by-Severity Policy",
+    "text": "High-priority tickets must receive a first response within 2 hours and a resolution attempt within 24 hours. Medium-priority tickets must receive a first response within 8 hours and a resolution attempt within 48 hours. Low-priority tickets must receive a first response within 24 hours and a resolution attempt within 72 hours. Resolution time is measured from ticket creation to the status change away from Open or In Progress."
+  },
+  {
+    "id": "KB03",
+    "topic": "escalation_matrix",
+    "title": "Escalation Matrix",
+    "text": "A ticket is escalated to a senior support lead when it has been open for more than 30 days, or when the automated escalation score computed from the ticket's flagged-for-review status and days-open crosses the configured threshold. Escalated tickets involving a Product Defect are additionally routed to the quality team for root-cause review. Any ticket escalated twice without resolution is automatically routed to the operations manager for direct review."
+  },
+  {
+    "id": "KB04",
+    "topic": "refund_compensation_policy",
+    "title": "Refund and Compensation Policy",
+    "text": "Billing disputes confirmed as a genuine overcharge are refunded in full to the original payment method within 5 to 7 business days of confirmation. Service credits, rather than cash refunds, are the default remedy for confirmed trip quality issues such as a significantly delayed pickup. Compensation beyond the standard service credit requires sign-off from a support lead and must be logged with a reason code on the ticket."
+  },
+  {
+    "id": "KB05",
+    "topic": "customer_communication_channel_policy",
+    "title": "Customer Communication Channel Policy",
+    "text": "Standard ticket updates are sent through the in-app notification channel and email, in that order of preference. Phone contact is reserved for high-priority safety-related tickets or when a customer has explicitly requested a callback. Any phone number captured in a ticket must be masked in logs and support-agent views, showing only the last four digits."
+  },
+  {
+    "id": "KB06",
+    "topic": "business_hours_holiday_support",
+    "title": "Business Hours and Holiday Support Policy",
+    "text": "Standard support coverage runs from 8 AM to 10 PM local time, seven days a week, including public holidays. Outside these hours, only high-priority safety tickets are staffed; all other tickets queue for the next business window and the SLA clock pauses until coverage resumes. During declared regional holidays, customers are notified in advance through the app that response times may extend by up to 12 hours for non-critical tickets."
+  },
+  {
+    "id": "KB07",
+    "topic": "repeat_complaint_handling",
+    "title": "Repeat Complaint Handling Policy",
+    "text": "A customer who raises three or more tickets in the same category within a 30-day window is flagged for repeat-complaint review. Repeat-complaint tickets are automatically escalated one priority level above their default classification. The support lead reviewing a repeat-complaint ticket must check prior ticket history before responding, so the customer is not asked to re-explain an issue already documented."
+  },
+  {
+    "id": "KB08",
+    "topic": "service_credit_policy",
+    "title": "Service Credit Policy",
+    "text": "Service credits are issued as account balance rather than cash and are the default remedy for minor service shortfalls such as a late pickup or a cancelled trip caused by a driver-side issue. A single service credit per confirmed incident is standard; stacking credits for the same incident is not permitted without support-lead approval. Service credits expire 90 days after issuance if unused."
+  },
+  {
+    "id": "KB09",
+    "topic": "feedback_collection_process",
+    "title": "Feedback Collection Process",
+    "text": "After a ticket is marked Resolved or Closed, the customer receives a short satisfaction survey through the app within 24 hours. Feedback scores below a defined threshold automatically reopen the ticket for a follow-up review by a support lead. Aggregated feedback trends are reviewed weekly to identify categories with declining satisfaction."
+  },
+  {
+    "id": "KB10",
+    "topic": "vip_customer_handling",
+    "title": "VIP Customer Handling Policy",
+    "text": "Customers in the top loyalty tier are flagged as VIP in the support system and their tickets are routed directly to senior support staff, bypassing the general queue. VIP tickets inherit a one-level priority boost over their default classification regardless of category. Any refund or compensation decision on a VIP ticket above the standard service-credit amount must still follow the standard sign-off process; VIP status accelerates routing, not approval limits."
+  },
+  {
+    "id": "KB11",
+    "topic": "outage_communication_protocol",
+    "title": "Outage Communication Protocol",
+    "text": "During a confirmed platform or regional service outage, a single banner notification is pushed to all affected users rather than responding to each ticket individually. Tickets opened during a declared outage window are tagged with the outage reference so agents can close them in bulk once service is restored, instead of investigating each one as an isolated Product Defect or Technical Issue. The operations team is responsible for declaring and closing an outage window; support agents do not declare outages on their own authority."
+  },
+  {
+    "id": "KB12",
+    "topic": "data_retention_policy_for_tickets",
+    "title": "Data Retention Policy for Support Tickets",
+    "text": "Resolved and Closed tickets, including their associated audit log entries, are retained for 24 months for compliance and quality-review purposes before being archived. Masked PII fields within a ticket remain masked in the archived record; archival does not restore redacted values. Tickets flagged under an active legal or regulatory hold are excluded from the standard retention timeline until the hold is lifted."
+  }
+]
