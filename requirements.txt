@@ -1,0 +1,15 @@
+crewai==1.15.37
+chromadb==1.5.9
+sentence-transformers==3.0.1
+transformers>=4.41,<5.0
+numpy<2
+cryptography==42.0.8
+pydantic==2.12.5
+langchain-core==1.7.6
+fastapi==0.162.1
+uvicorn[standard]==0.54.0
+websockets==17.4
+httpx==0.28.1
+autogen-agentchat==0.7.5
+autogen-ext==0.7.5
+autogen-core==0.7.5
